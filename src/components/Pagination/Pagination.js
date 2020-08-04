@@ -37,7 +37,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, height}) => {
       <ul className='pagination'>
         {Filter.map(number => (
           <li key={number} className='page-item'>
-            <a onClick={() => paginate(number)} href='!#' className='page-link'>
+            <a onClick={() => paginate(number)} href='/' className='page-link'>
               {number}
             </a>
           </li>
