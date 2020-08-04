@@ -43,10 +43,10 @@ function App() {
   const handleFilter=(e)=>{
       if (e.target.value === "25") {
         setPostPerpage(25)
-        setHeight(2000)
+        setHeight(1322)
     } else if (e.target.value === "50") {
         setPostPerpage(50)
-        setHeight(3200)
+        setHeight(1322)
     } else if (e.target.value === "10") {
         setPostPerpage(10)
         setHeight(1300)
