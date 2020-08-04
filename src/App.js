@@ -13,7 +13,7 @@ function App() {
   const [update,setupdate]= useState(false)
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage,setPostPerpage] = useState(10);
-  const [height,setHeight]= useState(1322)
+  const [height,setHeight]= useState(1305)
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   let currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
@@ -43,13 +43,13 @@ function App() {
   const handleFilter=(e)=>{
       if (e.target.value === "25") {
         setPostPerpage(25)
-        setHeight(2100)
+        setHeight(2050)
     } else if (e.target.value === "50") {
         setPostPerpage(50)
-        setHeight(3200)
+        setHeight(3300)
     } else if (e.target.value === "10") {
         setPostPerpage(10)
-        setHeight(1300)
+        setHeight(1305)
     }
   }
 

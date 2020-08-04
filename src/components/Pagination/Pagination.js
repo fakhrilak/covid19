@@ -42,9 +42,9 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, height}) => {
             </a>
           </li>
         ))}
-        <a style={{paddingLeft:20,fontSize:20}} onClick={()=>handleNext()}>{">>"}</a>      
+        <a style={{paddingLeft:20,fontSize:15}} onClick={()=>handleNext()}>{">>"}</a>      
         <div>
-          <a style={{paddingLeft:40,position:'absolute',left:108,top:height,fontSize:20}} onClick={()=>handlePreview()}
+          <a style={{paddingLeft:40,position:'absolute',left:108,top:height,fontSize:15}} onClick={()=>handlePreview()}
         >{"<<"}</a>
         </div>
         
