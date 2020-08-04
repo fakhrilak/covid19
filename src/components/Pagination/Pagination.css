@@ -1,0 +1,23 @@
+.container{
+    padding-bottom: 30px;
+}
+.pagination{
+    list-style-type: none;
+    margin-left: 100px;
+    color:#FF0742 ;
+}
+.page-item{
+    display: block 
+}
+li {
+    float: left;
+    padding-left: 25px;
+  }
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #FF0742;
+    padding-left: 20px;
+  }
