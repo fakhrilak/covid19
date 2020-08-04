@@ -46,7 +46,7 @@ function App() {
         setHeight(2065)
     } else if (e.target.value === "50") {
         setPostPerpage(50)
-        setHeight(3305)
+        setHeight(3345)
     } else if (e.target.value === "10") {
         setPostPerpage(10)
         setHeight(1305)
