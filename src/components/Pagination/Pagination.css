@@ -21,7 +21,7 @@ li a {
     color: #FF0742;
   }
 .item{
-    max-width: 80%;
+    max-width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
