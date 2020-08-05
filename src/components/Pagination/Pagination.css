@@ -10,8 +10,9 @@
 }
 li {
     float: left;
-    padding-left: 10px;
-    padding-right: 15px;
+    margin-left: auto;
+    padding-left: 25px;
+    margin-right: auto;
   }
 li a {
     text-align: center;
@@ -20,7 +21,7 @@ li a {
     color: #FF0742;
   }
 .item{
-    max-width: 50%;
+    max-width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
