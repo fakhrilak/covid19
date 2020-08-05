@@ -32,23 +32,29 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, height}) => {
   }
   let Filter= pageNumbers.slice(B, C);
 
-  return (
-    <div className="container">
-      <ul className='pagination'>
-        {Filter.map(number => (
-          <li key={number} className='page-item'>
-            <a onClick={() => paginate(number)}  className='page-link'>
+  const numberpage = Filter.map((number)=>{
+    return(
+      <>
+         <ul >
+         <li key={number} className='page-item'>
+            <a onClick={() => paginate(number)}>
               {number}
             </a>
           </li>
-        ))}
-        <a style={{paddingLeft:20,fontSize:15}} onClick={()=>handleNext()}>{">>"}</a>      
-        <div>
-          <a style={{paddingLeft:40,position:'absolute',left:108,top:height,fontSize:15}} onClick={()=>handlePreview()}
-        >{"<<"}</a>
-        </div>
-        
-      </ul>
+         </ul>
+      </>
+    )
+  })
+
+  return (
+    <div className="container">
+        <ul className='pagination'>
+          <div className='item'>
+            <a  onClick={()=>handlePreview()}  style={{textAlign:'right'}}>{"<<"}</a>
+            <a style={{textAlign:'left'}}>{numberpage}</a>
+            <a  onClick={()=>handleNext()} style={{paddingLeft:20}}>{">>"}</a> 
+          </div>       
+        </ul>         
     </div>
   );
 };
