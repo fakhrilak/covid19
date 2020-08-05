@@ -51,8 +51,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, height}) => {
         <ul className='pagination'>
           <div className='item'>
             <a  onClick={()=>handlePreview()}  style={{textAlign:'right'}}>{"<<"}</a>
-            <a style={{textAlign:'left'}}>{numberpage}</a>
-            <a  onClick={()=>handleNext()} style={{paddingLeft:20}}>{">>"}</a> 
+            <a style={{textAlign:'center'}}>{numberpage}</a>
+            <a  onClick={()=>handleNext()}>{">>"}</a> 
           </div>       
         </ul>         
     </div>

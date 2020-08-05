@@ -10,7 +10,8 @@
 }
 li {
     float: left;
-    padding-left: 25px;
+    padding-left: 10px;
+    padding-right: 15px;
   }
 li a {
     text-align: center;
